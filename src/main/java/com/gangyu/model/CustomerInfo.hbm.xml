@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gangyu.model">
+	<!-- 配置通知实体类的ORM关系映射文件 -->
+	<class name="NoticeInfo" table="tb_noticeinfo">
+		<!-- 配置主键生成策略 -->
+		<id name="noticeId" column="notice_id">
+			<generator class="native"></generator>
+		</id>
+		<!-- 配置公告用户Id -->
+		<property name="userId" column="user_id" type="java.lang.Integer"></property>
+		<!-- 配置公告用户姓名 -->
+		<property name="userName" column="user_name" type="java.lang.String"></property>
+		<!-- 配置公告主题 -->
+		<property name="noticeItem" column="notice_item" type="java.lang.String"></property>
+		<!-- 配置公告内容 -->
+		<property name="noticeContent" column="notice_content" type="java.lang.String"></property>
+		<!-- 配置公告发布时间 -->
+		<property name="noticeTime" column="notice_time" type="java.sql.Timestamp"></property>
+		<!-- 配置公告截止时间 -->
+		<property name="noticeEndTime" column="notice_endtime" type="java.sql.Timestamp"></property>
+		<!-- 配置公告是否有效 -->
+		<property name="noticeIsUsed" column="notice_isused" type="java.lang.String"></property>
+	</class>
+</hibernate-mapping>       

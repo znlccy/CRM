@@ -40,5 +40,7 @@
         <mapping resource="com/gangyu/model/OtherInfo.hbm.xml"/>
         <!-- 在Hibernate中配置关注用户信息对应的映射关系文件 -->
         <mapping resource="com/gangyu/model/CustomerCareInfo.hbm.xml"/>
+        <!-- 在Hibernate中配置关注公告信息对应的映射关系文件 -->
+        <mapping resource="com/gangyu/model/Notice.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

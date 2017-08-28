@@ -9,11 +9,11 @@
 		<id name="roleId" column="role_id">
 			<generator class="native"></generator>
 		</id>
-		<!-- 配置 -->
+		<!-- 配置权限角色名称 -->
 		<property name="roleName" column="role_name" type="java.lang.String"></property>
-		<!-- 配置 -->
+		<!-- 配置权限角色权限范围 -->
 		<property name="rolePower" column="role_power" type="java.lang.String"></property>
-		<!-- 配置 -->
+		<!-- 配置权限角色时候有效 -->
 		<property name="isUsed" column="is_used" type="java.lang.Integer"></property>
 	</class>
 </hibernate-mapping>       

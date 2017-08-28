@@ -1,5 +1,6 @@
 package com.gangyu.model;
 
+import javax.persistence.*;
 import java.util.Date;
 
 
@@ -9,11 +10,16 @@ import java.util.Date;
  * @function 这是一个用户信息实体类
  */
 
+/*@Entity
+@Table(name = "tb_userinfo")*/
 public class UserInfo {
 	
 	/**
 	 * 员工编号
 	 */
+/*	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "user_id")*/
 	private int userId;
 	
 	/**
