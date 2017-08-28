@@ -68,6 +68,63 @@
 	    <scope>provided</scope>
 	</dependency>
 	
+	<!-- 配置Spring-web mvc核心文件 -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>4.3.8.RELEASE</version>
+	</dependency>
+	
+	<!-- 配置Spring核心jar包 -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>4.3.8.RELEASE</version>
+	</dependency>
+	
+	<!-- 配置Spring面向切面的jar包 -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-aop</artifactId>
+	    <version>4.3.8.RELEASE</version>
+	</dependency>
+	
+	<!-- 配置Spring连接数据库的jar包 -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>4.3.8.RELEASE</version>
+	</dependency>	
+	
+	<!-- 配置Spring环境上下文的jar包 -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+	<dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.3.8.RELEASE</version>
+        <scope>runtime</scope>
+    </dependency>
+	
+	<!-- 配置Spring事务 -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-tx</artifactId>
+	    <version>4.3.8.RELEASE</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
+	<dependency>
+	    <groupId>c3p0</groupId>
+	    <artifactId>c3p0</artifactId>
+	    <version>0.9.1.2</version>
+	</dependency>
+	
+	
   </dependencies>
   <build>
     <plugins>
