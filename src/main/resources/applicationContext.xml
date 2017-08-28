@@ -11,7 +11,7 @@
  http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
  	
  	 <!-- 定义数据源Bean，使用c3p0数据源实现 -->
- 	<bean>
- 		
- 	</bean>
+ 	<!--<bean id="dataSource" destroy-method="close" class="">-->
+ 		<!---->
+ 	<!--</bean>-->
  </beans>

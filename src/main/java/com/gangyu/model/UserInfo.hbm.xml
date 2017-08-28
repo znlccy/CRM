@@ -10,7 +10,7 @@
 			<generator class="native"></generator>
 		</id>
 		<!-- 配置员工姓名 -->
-		<property name="userName" column="user_name" type="java.lang.String"></property>
+		<property name="userName" column="user_name" type="string"></property>
 		<!-- 配置员工性别 -->
 		<property name="userSex" column="user_sex" type="java.lang.String"></property>
 		<!-- 配置员工年龄 -->
@@ -36,11 +36,11 @@
 		<!-- 配置用户地址 -->
 		<property name="userAddress" column="user_address" type="java.lang.String"></property>
 		<!-- 配置用户添加时间 -->
-		<property name="userAddtime" column="user_addtime" type="java.sql.TimeStamp"></property>
+		<property name="userAddtime" column="user_addtime" type="timestamp"></property>
 		<!-- 配置用户添加人 -->
 		<property name="userAddman" column="user_addman" type="java.lang.String"></property>
 		<!-- 配置用户修改时间 -->
-		<property name="userChangetime" column="user_changetime" type="java.sql.TimeStamp"></property>
+		<property name="userChangetime" column="user_changetime" type="timestamp"></property>
 		<!-- 配置用户修改人 -->
 		<property name="userChangeman" column="user_changeman" type="java.lang.String"></property>
 		<!-- 配置用户兴趣 -->

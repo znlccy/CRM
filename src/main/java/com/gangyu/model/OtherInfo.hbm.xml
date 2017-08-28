@@ -15,7 +15,7 @@
 		<!-- 配置客户状态是否有效 -->
 		<property name="conditionIsUsed" column="condition_isused" type="java.lang.String"></property>
 		<!-- 配置客户来源编号 -->
-		<property name="sourceId" column="source_id" type="java.lang.Integer"></property>
+		<property name="sourceId" column="source_id" type="java.lang.Integer" insert="false" update="false"></property>
 		<!-- 配置客户来源是否有效 -->
 		<property name="sourceIsUsed" column="source_id" type="java.lang.String"></property>
 		<!-- 配置客户类型编号 -->
