@@ -30,31 +30,7 @@
 		<property name="houseTypeName" column="house_typename" type="java.lang.String"></property>
 		<!-- 配置房屋类型继承人 -->
 		<property name="houseTypeGenre" column="house_typegenre" type="java.lang.String"></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
-		<!-- 配置 -->
-		<property name="" column="" type=""></property>
+		<!-- 配置房屋类型是否有效 -->
+		<property name="houseTypeIsUsed" column="house_typeisused" type="java.lang.String"></property>
 	</class>
 </hibernate-mapping>       
