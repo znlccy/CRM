@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gangyu.model">
+	<class name="OtherInfo" table="tb_otherinfo">
+		<!-- 配置客户状态主键 -->
+		<id name="conditionId" column="condition_id">
+			<generator class="native"></generator>
+		</id>
+		<!-- 配置客户状态名称 -->
+		<property name="conditionName" column="condition_name" type="java.lang.String"></property>
+		<!-- 配置 客户状态介绍-->
+		<property name="conditionExplain" column="condition_explain" type="java.lang.String"></property>
+		<!-- 配置客户状态是否有效 -->
+		<property name="conditionIsUsed" column="condition_isused" type="java.lang.String"></property>
+		<!-- 配置客户来源编号 -->
+		<property name="sourceId" column="source_id" type="java.lang.Integer"></property>
+		<!-- 配置客户来源是否有效 -->
+		<property name="sourceIsUsed" column="source_id" type="java.lang.String"></property>
+		<!-- 配置客户类型编号 -->
+		<property name="customerTypeId" column="customer_typeid" type="java.lang.Integer"></property>
+		<!-- 配置客户类型名称-->
+		<property name="customerTypeName" column="customer_typename" type="java.lang.String"></property>
+		<!-- 配置客户类型是否有效 -->
+		<property name="customerTypeIsUsed" column="customer_typeisused" type="java.lang.String"></property>
+		<!-- 配置房屋类型编号 -->
+		<property name="houseTypeId" column="house_typeid" type="java.lang.Integer"></property>
+		<!-- 配置 房屋类型名称-->
+		<property name="houseTypeName" column="house_typename" type="java.lang.String"></property>
+		<!-- 配置房屋类型继承人 -->
+		<property name="houseTypeGenre" column="house_typegenre" type="java.lang.String"></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+		<!-- 配置 -->
+		<property name="" column="" type=""></property>
+	</class>
+</hibernate-mapping>       

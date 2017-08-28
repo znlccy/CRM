@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.serve.static.browserCache" value="false"/>
+
+	<!-- 配置关注用户相关操作 -->
+    <package name="customercare" namespace="/" extends="struts-default">
+        <!-- 这是添加关注用户的Action配置 -->
+        <action name="ccadd" class="com.gangyu.control.customercare.CustomerCareAddAction" method="add">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        
+        <!-- 这是删除关注用户的Action配置 -->
+        <action name="ccdelete" class="com.gangyu.control.customercare.CustomerCareDeleteAction" method="delete">
+        	<result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        
+        <!-- 这是查询关注用户的Action配置 -->
+        <action name="ccquery" class="com.gangyu.control.customercare.CustomerCareQueryAction">
+        	<result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        
+        <!-- 这是更新关注用户的Action配置 -->
+        <action name="ccupdate" class="com.gangyu.control.customercare.CustomerCareUpdateAction">
+        	<result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
+    
+    <package name="login" namespace="/" extends="struts-default">
+    	<action name="delete">
+    		
+    	</action>
+    </package>
+
+    <!-- <include file="example.xml"/> -->
+
+    <!-- Add packages here -->
+
+</struts>

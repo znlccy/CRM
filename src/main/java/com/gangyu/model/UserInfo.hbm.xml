@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gangyu.model">
+	<!-- 配置ORM对应的映射关系表 -->
+	<class name="UserInfo" table="tb_userinfo">
+		<!-- 主键生成策略以及对应数据库中的字段 user_id-->
+		<id name="userId" column="user_id">
+			<generator class="native"></generator>
+		</id>
+		<!-- 配置员工姓名 -->
+		<property name="userName" column="user_name" type="java.lang.String"></property>
+		<!-- 配置员工性别 -->
+		<property name="userSex" column="user_sex" type="java.lang.String"></property>
+		<!-- 配置员工年龄 -->
+		<property name="userAge" column="user_age" type="java.lang.Integer"></property>
+		<!-- 配置部门编号 -->
+		<property name="departmentId : int" column="department_id" type="java.lang.String"></property>
+		<!-- 配置部门名称 -->
+		<property name="departmentName" column="department_name" type="java.lang.String"></property>
+		<!-- 配置角色编号 -->
+		<property name="roleId" column="role_id" type="java.lang.Integer"></property>
+		<!-- 配置角色名称 -->
+		<property name="roleName" column="role_name" type="java.lang.String"></property>
+		<!-- 配置角色权限 -->
+		<property name="rolePower" column="role_power" type="java.lang.String"></property>
+		<!-- 配置用户手机 -->
+		<property name="userMobile" column="user_mobile" type="java.lang.String"></property>
+		<!-- 配置用户座机 -->
+		<property name="userTel" column="user_tel" type="java.lang.String"></property>
+		<!-- 配置用户身份证号码 -->
+		<property name="userIdnum" column="user_idnum" type="java.lang.String"></property>
+		<!-- 配置用户邮箱 -->
+		<property name="userEmail" column="user_mail" type="java.lang.String"></property>
+		<!-- 配置用户地址 -->
+		<property name="userAddress" column="user_address" type="java.lang.String"></property>
+		<!-- 配置用户添加时间 -->
+		<property name="userAddtime" column="user_addtime" type="java.sql.TimeStamp"></property>
+		<!-- 配置用户添加人 -->
+		<property name="userAddman" column="user_addman" type="java.lang.String"></property>
+		<!-- 配置用户修改时间 -->
+		<property name="userChangetime" column="user_changetime" type="java.sql.TimeStamp"></property>
+		<!-- 配置用户修改人 -->
+		<property name="userChangeman" column="user_changeman" type="java.lang.String"></property>
+		<!-- 配置用户兴趣 -->
+		<property name="userIntest" column="user_intest" type="java.lang.String"></property>
+		<!-- 配置用户学历 -->
+		<property name="userDiploma" column="user_diploma" type="java.lang.String"></property>
+		<!-- 配置用户银行卡号 -->
+		<property name="userBankcard" column="user_bankcard" type="java.lang.String"></property>
+		<!-- 配置 用户民族 -->
+		<property name="userNation" column="user_nation" type="java.lang.String"></property>
+		<!-- 配置用户是否结婚 -->
+		<property name="isMarried" column="is_married" type="java.lang.String"></property>
+		<!-- 配置用户编号 -->
+		<property name="userNum" column="user_num" type="java.lang.String"></property>
+		<!-- 配置用户密码 -->
+		<property name="userPasswd" column="user_passwd" type="java.lang.String"></property>
+		<!-- 配置用户是否可用 -->
+		<property name="isUsed" column="is_used" type="java.lang.String"></property>
+	</class>
+</hibernate-mapping>       

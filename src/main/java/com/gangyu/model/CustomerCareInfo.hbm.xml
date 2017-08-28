@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.gangyu.model">
+	<class name="CustomerCareInfo" table="tb_customerinfo">
+		<id name="careId" column="care_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="customerId" column="customer_id" update="true"></property>
+		<property name="customerName" column="customer_name" update="true"></property>
+		<property name="careTheme" column="care_theme" update="true"></property>
+		<property name="careWay" column="care_way" update="true"></property>
+		<property name="careTime" type="timestamp" column="care_time" update="true"></property>
+		<property name="careRemark" column="care_remark" update="true"></property>
+		<property name="careNexttime" type="timestamp" column="care_nexttime" update="true"></property>
+		<property name="carePeople" column="care_people" update="true"></property>
+		<property name="isUsed" column="is_used" update="true"></property>
+	</class>
+</hibernate-mapping>
