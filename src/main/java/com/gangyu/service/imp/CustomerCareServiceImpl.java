@@ -2,8 +2,6 @@ package com.gangyu.service.imp;
 
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
 import com.gangyu.dao.CustomerCareDao;
 import com.gangyu.dao.imp.CustomerCareDAOImpl;
 import com.gangyu.model.CustomerCareInfo;
